@@ -27,7 +27,7 @@ def hello_world():
     allTodo = Todo.query.all()
     return render_template('index.html', allTodo = allTodo)
 
-@app.route('/show')
+@app.route('/show') 
 def products():
     allTodo = Todo.query.all()
     print(allTodo)
